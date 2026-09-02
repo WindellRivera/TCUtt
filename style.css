@@ -1,0 +1,79 @@
+body {
+font-family: Arial, sans-serif;
+background: linear-gradient(to bottom, #000000, #4B0082); /* negro a morado */
+padding: 20px;
+text-align: center;
+color: white;
+min-height: 100vh;
+}
+
+h1 {
+font-family: Arial, sans-serif; /* misma fuente que las cajas */
+color: #dda0dd; /* morado claro */
+text-shadow: 0 0 10px #ffffff; /* glow blanco en el título */
+}
+
+.semana {
+font-family: Arial, sans-serif; /* misma fuente que el título */
+background-color: #afaeae; /* gris */
+border: 2px solid #ffffff;
+margin: 25px auto;
+padding: 20px;
+border-radius: 25px;
+cursor: pointer;
+transition: 0.3s;
+width: 80%;
+color: white;
+box-shadow: 0 0 15px #ffffff; /* glow blanco */
+}
+
+.semana:hover {
+background-color: #c372e4; /* cambio al pasar el mouse */
+box-shadow: 0 0 25px #ffffff; /* glow más fuerte */
+}
+
+.dias {
+display: none;
+margin-top: 15px;
+display: flex;
+justify-content: space-around;
+align-items: center;
+flex-wrap: wrap;
+}
+
+.dia {
+background-color: #3a3a3a;
+border-radius: 15px;
+padding: 10px 20px;
+margin: 5px;
+box-shadow: 0 0 10px #ffffff;
+display: flex;
+align-items: center;
+gap: 10px;
+}
+
+input[type="checkbox"] {
+width: 20px;
+height: 20px;
+accent-color: #00ff00; /* verde brillante para el check */
+cursor: pointer;
+}
+#bienvenida {
+color: rgb(221, 214, 224); /* texto claro */
+font-size: 20px;
+font-weight: bold;
+margin-top: 20px;
+text-shadow: 
+  0 0 5px #800080,   /* glow pequeño */
+  0 0 10px #800080,  /* glow medio */
+  0 0 20px #800080;  /* glow grande */
+}
+#hora {
+position: absolute;
+top: 20px;          /* arriba */
+right: 30px;        /* a la derecha */
+color: white;
+font-size: 45px;    /* grande */
+font-weight: bold;
+text-shadow: 0 0 20px #800080, 0 0 40px #800080; /* glow morado */
+}
